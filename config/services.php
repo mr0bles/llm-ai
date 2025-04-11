@@ -34,5 +34,11 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+    'ollama' => [
+        'host' => env('OLLAMA_HOST', 'localhost'),
+        'port' => env('OLLAMA_PORT', 11434),
+        'model' => env('OLLAMA_MODEL', 'llama2'),
+    ],
+
 
 ];
